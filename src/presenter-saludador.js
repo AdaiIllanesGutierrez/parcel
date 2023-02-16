@@ -22,6 +22,21 @@ form.addEventListener("submit", (event) => {
   if (edad.value<30){
     genero.value="BIENVENIDO";
   }
+  // crea un nuevo objeto `Date`
+var today = new Date();
+// obtener la fecha y la hora
+var now = today.getHours();
+var hora=parseInt(now);
+if (hora>=0 && hora <12){
+now=" Buenos Dias"
+}if(hora >=12 && hora <7){
+  now= "Buenas Tardes"
+}
+if(hora >=7 && hora <24){
+  now= "Buenas Tardes"
+}
 
-  div.innerHTML = "HOLA" + " "+ genero.value + " " + nombre.value  ;
+console.log(now);
+
+  div.innerHTML = "HOLA" + " "+ genero.value + " " + nombre.value + " " + now  ;
 });
