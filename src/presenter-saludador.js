@@ -33,7 +33,7 @@ now=" Buenos Dias"
   now= "Buenas Tardes"
 }
 if(hora >=7 && hora <24){
-  now= "Buenas Tardes"
+  now= "Buenas Noches"
 }
 
 console.log(now);
