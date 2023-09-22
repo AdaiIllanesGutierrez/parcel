@@ -1,65 +1,51 @@
-<!-- <style>
- *{
-  background-color: black;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: auto;
-  font-style: oblique;
- }
- body{
-  text-align: center;
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flores Amarillas &lt;3</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&display=swap" rel="stylesheet">
+    <!--
+        Codigo By: MartL7
+    -->
+</head>
+<body>
 
- }
- h1{
-    color:azure;
-    text-align: center;
-  }
-  label{
-    color: aqua;
+    <div class="Contenedor-Binicio">
+        <button class="Button" id="BVer"> Clicka aqui </button>
+    </div>
 
-  }
-  input{
-    color:rgb(0, 21, 212);
-    background-image: radial-gradient(circle at 50% -20.71%, #feffff 0, #efffff 12.5%, #ddfffd 25%, #cafbf7 37.5%, #b5f2f2 50%, #9fe9ee 62.5%, #8ae1ec 75%, #76d9eb 87.5%, #62d1eb 100%);
-  }
-  form{
-    color:rgb(212, 127, 255);
-  }
-  div{
-    color:azure;
-  }
-  #sumar-button:hover{
-    height: 30px;
-    width: 60px;
-  }
-  #multiplicar-button:hover{
-    height: 30px;
-    width: 90px;
-  }
-</style> -->
-<html>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número :</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
-    <h1>Multiplicador</h1>
-    <form id="multiplicar-form">
-      <label for="numero1">Primer número:</label>
-      <input type="number" id="numero1" />
-      <label for="numero2">Segundo número :</label>
-      <input type="number" id="numero2" />
-      <input type="submit" value="Multiplicar" id="multiplicar-button" />
-    </form>
-    <div id="resultado-div2"></div>
-    <script type="module" src="./src/presenter.js"></script>
-    <a href="./indexsaludador.html"> IR A SALUDAR</a>
-    
+    <div class="Con-Emergente">
+        <div id="resultado" class="cua">
+            <p id="res">
+                Hola, antes de iniciar, solo quiero recordarte que eres 
+                muy especial para mí y gracias por todo. &lt;3
+            </p>    
+            <button id="BotonCerrar" class="Button">Cerrar</button>
+        </div>
+    </div>
 
+    <div class="Con-2">
+        <h1 id="Titulo"> Elije una Opcion </h1>
+        <div class="Con">
+            <button class="Button" id="B1"> 1 Flor </button>
+            <button class="Button" id="B12"> 12 Flores :) </button>
+        </div>
+    </div>
 
-  </body>
+    <main class="Contenedor">
+        <canvas id="Flor" class="Flor" width="800" height="600"></canvas>
+
+        <div class="Texto">
+            <h2 id="Text">Para la niña mas Linda del Mundo.</h2>
+        </div>
+
+    </main>
+
+    <script src="Js/app.js"></script>
+    <script src="Js/Dis.js"></script>
+</body>
 </html>
